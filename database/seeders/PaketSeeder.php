@@ -1,9 +1,11 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class KehadiranSeeder extends Seeder
+class PaketSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,52 +14,51 @@ class KehadiranSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('kehadiran')->insert([
+        DB::table('paket')->insert([
             'id' => 1,
-            'ket' => 'Hadir',
-            'color' => '3C0',
+            'ket' => 'Bisnis kontruksi dan Properti',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s')
         ]);
-        DB::table('kehadiran')->insert([
+        DB::table('paket')->insert([
             'id' => 2,
-            'ket' => 'Izin',
-            'color' => '0CF',
+            'ket' => 'Desain Permodelan dan Informasi Bangunan',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s')
         ]);
-        DB::table('kehadiran')->insert([
+        DB::table('paket')->insert([
             'id' => 3,
-            'ket' => 'Bertugas Keluar',
-            'color' => 'F90',
+            'ket' => 'Elektronika Industri',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s')
         ]);
-        DB::table('kehadiran')->insert([
+        DB::table('paket')->insert([
             'id' => 4,
-            'ket' => 'Sakit',
-            'color' => 'FF0',
+            'ket' => 'Otomasi Industri',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s')
         ]);
-        DB::table('kehadiran')->insert([
+        DB::table('paket')->insert([
             'id' => 5,
-            'ket' => 'Terlambat',
-            'color' => '7F0',
+            'ket' => "Teknik Pemesinan",
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s')
         ]);
-        DB::table('kehadiran')->insert([
+        DB::table('paket')->insert([
             'id' => 6,
-            'ket' => 'Tanpa Keterangan',
-            'color' => 'F00',
+            'ket' => 'Teknik dan Bisnis Sepeda Motor',
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s')
         ]);
-        DB::table('pengumuman')->insert([
-            'id' => 1,
-            'opsi' => 'pengumuman',
-            'isi' => 'pengumuman',
+        DB::table('paket')->insert([
+            'id' => 7,
+            'ket' => 'Rekayasa Perangkat Lunak',
+            'created_at' => date('Y-m-d H:i:s'),
+            'updated_at' => date('Y-m-d H:i:s')
+        ]);
+        DB::table('paket')->insert([
+            'id' => 8,
+            'ket' => "Teknik Pengelasan",
             'created_at' => date('Y-m-d H:i:s'),
             'updated_at' => date('Y-m-d H:i:s')
         ]);
